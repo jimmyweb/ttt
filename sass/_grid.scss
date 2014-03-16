@@ -1,0 +1,41 @@
+.column-2,
+.column-3,
+.column-4,
+.column-5 {
+    @include clearfix;
+
+    .column {
+        float: left;
+    }
+
+    @include isMobile {
+        .column {
+            float: none;
+            width: auto !important;
+        }
+    }
+}
+
+.column-2 {
+    .column {
+        width: 50%;
+    }
+}
+
+.column-3 {
+    .column {
+        width: 33.333333%;
+    }
+}
+
+.column-4 {
+    .column {
+        width: 25%;
+    }
+}
+
+.column-5 {
+    .column {
+        width: 20%;
+    }
+}

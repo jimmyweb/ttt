@@ -1,0 +1,17 @@
+@include isMobile {
+    .mobile-hide {
+        display: none !important;
+    }
+}
+
+@include isTablet {
+    .tablet-hide {
+        display: none !important;
+    }
+}
+
+@include isDesktop {
+    .desktop-hide {
+        display: none !important;
+    }
+}
