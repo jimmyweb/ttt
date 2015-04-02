@@ -1,1 +1,1 @@
- Boilerplate based on HTML5 Boilerplate for my initial projects (SASS support)
+TwinTechTowns 2015 BER-TLV project
