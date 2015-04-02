@@ -1,0 +1,24 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	background: $primary_bg;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.section {
+	min-height: 100%;
+	position: relative;
+}
+
+.content {
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 20px;
+}

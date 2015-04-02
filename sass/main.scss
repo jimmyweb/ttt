@@ -7,8 +7,11 @@
 @import "_helpers";
 @import "_rwd";
 @import "_grid";
+@import "_colors";
+
 // Layout specifics
 
+@import "layout/_common";
 @import "layout/_header";
 @import "layout/_footer";
 
