@@ -6,10 +6,47 @@ html, body {
 
 body {
 	background: $primary_bg;
+	font-family: $font;
+	color: $dark_font;
+	font-size: 62.5%;
 }
 
 * {
 	box-sizing: border-box;
+}
+
+p, a {
+	font-size: 1.8em;
+	font-weight: $normal;
+	line-height: 1.6;
+}
+
+p a, li a {
+	font-size: 1em;
+}
+
+a {
+	text-decoration: none;
+	color: $primary_red;
+	display: inline-block;
+	font-weight: $medium;
+	@include transition(all 0.2s ease-in-out);
+
+	&:hover {
+		color: darken($primary_red, 20);
+	}
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2.6em;
+}
+
+h3 {
+	font-size: 2.2em;
 }
 
 .section {
@@ -22,3 +59,43 @@ body {
 	max-width: 1000px;
 	padding: 20px;
 }
+
+.heading {
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: $bold;
+}
+
+.light {
+	color: $white;
+}
+
+.list-columned {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	/* li {
+		display: block;
+		width: 31%;
+		margin: 0 1%;
+		float: left;
+		background: $white;
+		padding: 10px 20px;
+		box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
+	} */
+
+	li {
+		display: block;
+		margin: 15px 0;
+		background: $white;
+		padding: 10px 30px;
+		box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
+
+		/* &:nth-child(even) {
+			text-align: right;
+		} */
+	}
+}
+
