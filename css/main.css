@@ -976,3 +976,14 @@ h3 {
 #mentors_section {
   background: #e96c77;
 }
+
+/* line 7, ../sass/layout/_sections.scss */
+#about_section .founders img {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+/* line 13, ../sass/layout/_sections.scss */
+#about_section .founders .column {
+  padding: 10px;
+}

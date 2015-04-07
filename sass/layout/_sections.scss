@@ -1,3 +1,17 @@
 #mentors_section {
 	background: $primary_red;
 }
+
+#about_section {
+	.founders {
+		img {
+			max-width: 80%;
+			display: block;
+			margin: 0 auto;
+		}
+
+		.column {
+			padding: 10px;
+		}
+	}
+}
