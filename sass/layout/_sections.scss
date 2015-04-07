@@ -22,3 +22,18 @@
 		}
 	}
 }
+
+#partners_section {
+	background: $white;
+	.partners {
+		img {
+			max-width: 50%;
+			display: block;
+			margin: 0 auto;
+		}
+
+		.column {
+			padding: 10px;
+		}
+	}
+}
