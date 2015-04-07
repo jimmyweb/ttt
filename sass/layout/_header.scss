@@ -3,6 +3,10 @@
 	background-size: 100% auto;
 	background-attachment: fixed;
 
+	@include isMobile {
+		background-attachment: scroll;
+	}
+
 	&__logo {
 		display: block;
 	}	

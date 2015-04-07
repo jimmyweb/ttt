@@ -43,30 +43,6 @@
   }
 }
 
-$elementSeparator: ‘__’; 
-$modifierSeparator: ‘--’;
- 
-@mixin b($block) {
-   .#{$block} {
-       @content; 
-   }
-}
-
-/* @mixin e($element) {
-    @at-root {
-        #{&}#{$elementSeparator+$element} {
-            @content;
-        }
-    }
-}
-@mixin m($modifier) {
-    @at-root {
-        #{&}#{$modifierSeparator+$modifier} {
-            @content;
-        }
-    }
-} */
-
 @mixin resp($px) {
     @media only screen and (max-width: $px + px) { @content; }
 }
