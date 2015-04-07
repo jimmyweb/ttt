@@ -37,3 +37,46 @@
 		}
 	}
 }
+
+.mentor {
+	$root: &;
+	padding: 15px;
+	cursor: pointer;
+	position: relative;
+
+	&:hover {
+		background: rgba($white, .8);
+
+		#{$root}__name {
+			color: $lighter_font;
+		}
+
+		#{$root}__readmore {
+			opacity: 1;
+		}
+	}
+
+	&__name {
+		color: $white;
+		font-size: 1.2em;
+		display: block;
+		text-align: center;
+	}
+
+	&__avatar {
+		display: block;
+		width: 100%;
+	}
+
+	&__readmore {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		background: rgba($white, .2);
+		opacity: 0;
+		@include transition(all .2s ease-in-out);
+	}
+}
