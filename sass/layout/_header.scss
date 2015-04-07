@@ -1,17 +1,29 @@
 .header {
 	background: $primary_violet url(../img/towns_shadow.svg) no-repeat center bottom;
 	background-size: 100% auto;
+	background-attachment: fixed;
 
-	.logo {
-		position: absolute;
-		height: auto;
-		width: 70%;
+	&__logo {
 		display: block;
-		margin: auto;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
+	}	
+
+	&__title {
+		text-align: center;
+		color: $white;
+		font-weight: $normal;
+		font-style: italic;
+		font-size: 1.8em;
+		margin-top: 20px;
+		position: relative;
+	}
+
+	#counter {
+		margin-top: 20px;
+		/* color: $white;
+		font-size: 2em;
+		text-align: center;
+		padding: 20px;
+		border: 1px solid $white; */
 	}
 }
 
