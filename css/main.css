@@ -987,3 +987,10 @@ h3 {
 #about_section .founders .column {
   padding: 10px;
 }
+/* line 17, ../sass/layout/_sections.scss */
+#about_section .founders i {
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
