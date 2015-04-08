@@ -920,11 +920,18 @@ h3 {
 }
 
 /* line 99, ../sass/layout/_common.scss */
+.coming-soon {
+  display: block;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+/* line 105, ../sass/layout/_common.scss */
 .light {
   color: #FFFFFF;
 }
 
-/* line 103, ../sass/layout/_common.scss */
+/* line 109, ../sass/layout/_common.scss */
 .list-columned {
   margin: 0;
   padding: 0;
@@ -939,7 +946,7 @@ h3 {
   	box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
   } */
 }
-/* line 118, ../sass/layout/_common.scss */
+/* line 124, ../sass/layout/_common.scss */
 .list-columned li {
   display: block;
   margin: 15px 0;
@@ -1056,46 +1063,54 @@ h3 {
 }
 /* line 29, ../sass/layout/_sections.scss */
 #partners_section .partners img {
-  max-width: 50%;
+  max-width: 80%;
   display: block;
   margin: 0 auto;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
-/* line 35, ../sass/layout/_sections.scss */
+/* line 41, ../sass/layout/_sections.scss */
 #partners_section .partners .column {
   padding: 10px;
+  min-height: 200px;
+  position: relative;
 }
 
-/* line 41, ../sass/layout/_sections.scss */
+/* line 49, ../sass/layout/_sections.scss */
 .mentor {
   padding: 15px;
   cursor: pointer;
   position: relative;
 }
-/* line 47, ../sass/layout/_sections.scss */
+/* line 55, ../sass/layout/_sections.scss */
 .mentor:hover {
   background: rgba(255, 255, 255, 0.8);
 }
-/* line 50, ../sass/layout/_sections.scss */
+/* line 58, ../sass/layout/_sections.scss */
 .mentor:hover .mentor__name {
   color: #a2a2a2;
 }
-/* line 54, ../sass/layout/_sections.scss */
+/* line 62, ../sass/layout/_sections.scss */
 .mentor:hover .mentor__readmore {
   opacity: 1;
 }
-/* line 59, ../sass/layout/_sections.scss */
+/* line 67, ../sass/layout/_sections.scss */
 .mentor__name {
   color: #FFFFFF;
   font-size: 1.2em;
   display: block;
   text-align: center;
 }
-/* line 66, ../sass/layout/_sections.scss */
+/* line 74, ../sass/layout/_sections.scss */
 .mentor__avatar {
   display: block;
   width: 100%;
 }
-/* line 71, ../sass/layout/_sections.scss */
+/* line 79, ../sass/layout/_sections.scss */
 .mentor__readmore {
   position: absolute;
   top: 0;

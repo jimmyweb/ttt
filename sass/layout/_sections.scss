@@ -27,13 +27,21 @@
 	background: $white;
 	.partners {
 		img {
-			max-width: 50%;
+			max-width: 80%;
 			display: block;
 			margin: 0 auto;
+			position: absolute;
+			margin: auto;
+			top: 0;
+			bottom: 0;
+			left: 0; 
+			right: 0;
 		}
 
 		.column {
 			padding: 10px;
+			min-height: 200px;
+			position: relative;
 		}
 	}
 }
