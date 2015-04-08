@@ -31,3 +31,38 @@
 	}
 }
 
+.nav {
+	background: $primary_violet;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0px 40px;
+
+	@include isMaxTablet {
+		width: auto;
+		padding: 20px;
+		left: auto;
+		right: 0;
+	}
+
+	ul {
+		list-style: none;
+		float: right;
+	}
+
+	li {
+		display: inline-block;
+		padding: 5px 10px;
+
+		@include isMaxTablet {
+			display: block;
+		}
+
+		a {
+			font-size: 1.8em;
+			color: $white;
+		}
+	}
+}
+

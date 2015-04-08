@@ -987,6 +987,46 @@ h3 {
   border: 1px solid $white; */
 }
 
+/* line 34, ../sass/layout/_header.scss */
+.nav {
+  background: #333447;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0px 40px;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 34, ../sass/layout/_header.scss */
+  .nav {
+    width: auto;
+    padding: 20px;
+    left: auto;
+    right: 0;
+  }
+}
+/* line 49, ../sass/layout/_header.scss */
+.nav ul {
+  list-style: none;
+  float: right;
+}
+/* line 54, ../sass/layout/_header.scss */
+.nav li {
+  display: inline-block;
+  padding: 5px 10px;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 54, ../sass/layout/_header.scss */
+  .nav li {
+    display: block;
+  }
+}
+/* line 62, ../sass/layout/_header.scss */
+.nav li a {
+  font-size: 1.8em;
+  color: #FFFFFF;
+}
+
 /* line 1, ../sass/layout/_sections.scss */
 #mentors_section {
   background: #e96c77;
