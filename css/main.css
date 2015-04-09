@@ -1056,14 +1056,15 @@ h3 {
 
 /* line 77, ../sass/layout/_header.scss */
 #open-mobile-nav {
-  padding: 20px;
+  padding: 10px;
   position: fixed;
-  top: 0px;
-  right: 0px;
+  top: 3px;
+  right: 3px;
   background: #333447;
   border: 0;
+  border-radius: 5px;
 }
-/* line 84, ../sass/layout/_header.scss */
+/* line 85, ../sass/layout/_header.scss */
 #open-mobile-nav img {
   width: 40px;
   height: auto;
@@ -1075,7 +1076,7 @@ h3 {
   }
 }
 
-/* line 94, ../sass/layout/_header.scss */
+/* line 95, ../sass/layout/_header.scss */
 #close-mobile-nav {
   padding: 20px;
   position: absolute;
@@ -1084,13 +1085,13 @@ h3 {
   background: none;
   border: 0;
 }
-/* line 101, ../sass/layout/_header.scss */
+/* line 102, ../sass/layout/_header.scss */
 #close-mobile-nav img {
   width: 20px;
   height: auto;
 }
 @media only screen and (min-width: 1025px) {
-  /* line 94, ../sass/layout/_header.scss */
+  /* line 95, ../sass/layout/_header.scss */
   #close-mobile-nav {
     display: none;
   }
