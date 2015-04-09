@@ -1,26 +1,22 @@
 !function() {
+/*	$max-mobile: 767px;
+$min-tablet: 768px;
+$max-tablet: 1024px;
+$min-desktop: 1025px;*/
+	function isMobile() {
+		console.log('window width: ' + $(window).width());
+		return $(window).width() < 1024;
+	}
+
+
+
 	var counter = $("#counter"),
 	nowDate = new Date(),
-	targetDate = new Date("May, 05, 2015");
-
-	/*var UNITS = countdown.MONTHS | countdown.DAYS | countdown.HOURS;
-
-	setInterval(function(){
-	    counter.html(countdown(nowDate,targetDate, UNITS).toString());
-	  }, 1000);
-*/
-	/*counter.FlipClock(targetDate.getTime() - nowDate.getTime(), {
-		autostart: true,
-		clockFace: "DailyCounter",
-		countdown: true
-	});
-
-	console.log(targetDate.toString());
-	console.log(nowDate.toString());
-	console.log(targetDate.getTime() - nowDate.getTime());
-	console.log(targetDate.getDay(), nowDate.getDay());*/
-
-	var navHeight = $('.nav').height();
+	targetDate = new Date("May, 05, 2015"),
+	nav = $('.nav'),
+	navHeight = isMobile() ? 0 : nav.height(),
+	openNavButton = $('#open-mobile-nav'),
+	closeNavButton = $('#close-mobile-nav');
 
 	smoothScroll.init({
 	    speed: 500, // Integer. How fast to complete the scroll in milliseconds
@@ -39,7 +35,11 @@
 	    } // Function to run after scrolling
 	});
 
-	/*clock.setTime(targetDate.getTime() - nowDate.getTime());
-	clock.start();
-	console.log(targetDate.getTime());*/
+	openNavButton.on('click', function(e) {
+		nav.addClass('opened');
+	});
+
+	closeNavButton.on('click', function(e) {
+		nav.removeClass('opened');
+	});
 }();
